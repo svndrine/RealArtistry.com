@@ -16,35 +16,47 @@
     
     <header>
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
             <div class="container-fluid">
                 <a href="index.html">
                     <img class="navbar-brand" src="img/logo.jpg" width="80" height="80" />
                     </a>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse">
                     <ul class="navbar-nav me auto mb-2 mb-lg-0">
 
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="home_admin.html">Dashboard</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Application</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Aide</a></li>
 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Acceuil</a></li>
+                                <li><a class="dropdown-item" href="#">Vente</a></li>
+                                <li><a class="dropdown-item" href="#">Forum</a></li>
+                                <li><a class="dropdown-item" href="#">La Rédac'</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Promotion</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="newletters_admin.html">Newletter</a></li>
+                                <li><a class="dropdown-item" href="#">Option</a></li>
+                                <li><a class="dropdown-item" href="#">Option</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="#">Utilisateurs</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="#">Aide</a></li>
                     </ul>
                 </div>
 
-                <div class="d-flex flex-row fs-5">
-                    <a class="nav-link mx-2" href="#"><i class="bi bi-search text-dark"></i></a>
-                    <a class="nav-link mx-2" href="#"><i class="bi bi-bell-fill text-dark"></i></a>
-                    <a class="nav-link mx-2" href="#"><i class="bi bi-chat-square-text-fill text-dark"></i></a>
-                    <a class="nav-link mx-2" href="#"><i class="bi bi-circle-half text-dark"></i></a>
-                    <a class="nav-link mx-2" href="#"><i class="bi bi-person-circle text-dark"></i></a>
-                </div>
-                
-            </div>
         </nav>
-
+    
     </header>
+
+        
 
     <main>
 
