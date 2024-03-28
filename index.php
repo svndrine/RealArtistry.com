@@ -1,3 +1,10 @@
+<?php session_start(); ?>
+
+<? if (isset($_POST['pseudo']) && !empty($_POST['pseudo'])) {
+setcookie('pseudo', $_POST['pseudo'], time() + 1000, '/'); // Création d'un cookie qui expire dans ?
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
