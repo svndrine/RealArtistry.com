@@ -1,5 +1,6 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,35 +52,57 @@
 
 
     <main>
-            <!-- Formulaire de connexion -->
+
+         <!-- Formulaire de connexion -->
+
+            <!-- CAPCHA -->
 
             <section class="container">
                 
-                <h1 class="d-flex justify-content-center mt-5"> Login </h1>
+                <h1 class="d-flex justify-content-center mt-5"> Se connecter </h1>
+<br>
+                <?php
+                    if (isset($_GET['message']) && !empty($_GET['message'])) {
+                        echo '<p>' . htmlspecialchars($_GET['message']) . '</p>';
+                    }
+                    ?>
  
                 <div class="d-flex justify-content-center p-5">
 
-                    <form class="needs-validation w-50">
+                    <form class="needs-validation w-50" method="post" action="verification_connexion.php">
 
                     <div class="mb-3">
-                        <label for="username" class="form-label">Username</label>
-                        <input type="text" class="form-control" id="username" aria-describedby="identifiantDeConnexion">
+                        <label for="username" class="form-label">Identifiants</label>
+                        <input type="text" name="username" class="form-control" id="username" aria-describedby="identifiantDeConnexion">
                     </div>
 
                     <div class="mb-3">
-                        <label for="password" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="password">
+                        <label for="password" class="form-label">Mot de passe</label>
+                        <input type="password" name="password" class="form-control" id="password">
                     </div>
 
-                    <p class="small mb-3"><a class="text-decoration-none" href="#">Forgot password ?</a> </p>
+                    <p class="small mb-3 pb-lg-2"><a class="text-decoration-none" href="#">Mot de passe oublier ?</a></p>
                     <p class="small"><a class="text-decoration-none" href="registration.html">Créer un compte</a></p>
+                    
+
+                    <div class="mb-3">
+                    <h2>Répondez à la question suivante pour prouver que vous êtes humain :</h2>
+                    <div id="question"></div>
+                    <input type="text" id="answer" placeholder="Réponse">
+                    <button onclick="validateAnswer()">Valider</button>
+                </div>
 
 
-                    <div class="d-flex justify-content-center mt-5">
-                        <button type="submit" value="submit" class="btn btn-primary w-25">Login</button>
+
+                    
+                    <div class="d-flex justify-content-center p-4">
+                        <button type="submit" value="submit" name="login" class="btn btn-primary w-25">Se connecter</button>
                     </div>
                 </form>
                 </div>
+
+                
+                <script src="script.js"></script>
             </section>
     </main>
 </body>
