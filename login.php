@@ -21,7 +21,7 @@
             <div class="container-fluid">
 
                     <!-- Logo -->
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="index.php">
                     <img class="navbar-brand" src="img/logo.jpg" width="120" height="120" />
                 </a>
 
@@ -33,7 +33,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                        <li class="nav-items"><a class="nav-link" aria-current="page" href="index.html">Accueil</a></li>
+                        <li class="nav-items"><a class="nav-link" aria-current="page" href="index.php">Accueil</a></li>
                         <li class="nav-items"><a class="nav-link" href="#">Vente</a></li>
                         <li class="nav-items"><a class="nav-link" href="#">Forum</a></li>
                         <li class="nav-items"><a class="nav-link" href="#">La Rédac</a></li>
@@ -44,7 +44,7 @@
                         <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
                     </form>
 
-                    <a class="nav-link p-2" href="registration.html"> <i class="fa-solid fa-user"></i>  Inscription</a>
+                    <a class="nav-link p-2" href="registration.php"> <i class="fa-solid fa-user"></i>  Inscription</a>
                 </div>
             </div>
         </nav>
@@ -82,7 +82,7 @@
                     </div>
 
                     <p class="small mb-3 pb-lg-2"><a class="text-decoration-none" href="#">Mot de passe oublier ?</a></p>
-                    <p class="small"><a class="text-decoration-none" href="registration.html">Créer un compte</a></p>
+                    <p class="small"><a class="text-decoration-none" href="registration.php">Créer un compte</a></p>
                     
 
                     <div class="mb-3">
