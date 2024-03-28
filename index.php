@@ -41,7 +41,7 @@ setcookie('pseudo', $_POST['pseudo'], time() + 1000, '/'); // Création d'un coo
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                        <li class="nav-items"><a class="nav-link active" aria-current="page" href="index.html">Accueil</a></li>
+                        <li class="nav-items"><a class="nav-link active" aria-current="page" href="index.php">Accueil</a></li>
                         <li class="nav-items"><a class="nav-link" href="#">Vente</a></li>
                         <li class="nav-items"><a class="nav-link" href="#">Forum</a></li>
                         <li class="nav-items"><a class="nav-link" href="#">La Rédac</a></li>
@@ -52,7 +52,7 @@ setcookie('pseudo', $_POST['pseudo'], time() + 1000, '/'); // Création d'un coo
                         <input class="form-control" type="search" placeholder="Rechercher" aria-label="Search">
                       </form>
 
-                    <a class="nav-link text-white mx-2" href="login.html"> <i class="fa-solid fa-user"></i> Se connecter</a>
+                    <a class="nav-link text-white mx-2" href="login.php"> <i class="fa-solid fa-user"></i> Se connecter</a>
                 </div>
             </div>
         </nav>
