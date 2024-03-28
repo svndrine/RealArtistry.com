@@ -29,7 +29,7 @@ setcookie('pseudo', $_POST['pseudo'], time() + 1000, '/'); // Création d'un coo
             <div class="container-fluid">
 
                     <!-- Logo -->
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="index.php">
                     <img class="navbar-brand" src="img/logo.jpg" width="120" height="120" />
                 </a>
 
