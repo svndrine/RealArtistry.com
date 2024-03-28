@@ -85,11 +85,12 @@
                     <p class="small"><a class="text-decoration-none" href="registration.php">Créer un compte</a></p>
                     
 
-                    <div class="mb-3">
-                    <h2>Répondez à la question suivante pour prouver que vous êtes humain :</h2>
-                    <div id="question"></div>
-                    <input type="text" id="answer" placeholder="Réponse">
-                    <button onclick="validateAnswer()">Valider</button>
+                    <div class="m-4">
+                        <h5>Je ne suis pas un robot</h5>
+                        <div class="input-group w-50" id="question">
+                            <input type="text" class="form-control" id="answer" placeholder="Réponse">
+                            <button class="btn btn-outline-secondary" onclick="validateAnswer()">Valider</button>
+                    </div>
                 </div>
 
 
